@@ -1,0 +1,112 @@
+
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+
+@include mq($from: mq768) {
+  .header {
+      &__right{
+        display: none;
+    }
+    &__title {
+      float: left;
+    }
+     // Navigation
+    .nav {
+      float: left;
+      display: block;
+      box-shadow: none;
+
+      &__container {
+        clear: both;
+        overflow: hidden;
+      }
+
+      &__item {
+        float: left;
+        border: none;
+        
+      }
+    }
+  }
+}
+
+// From 1024px
+@include mq($from: mq1024) {
+  .side-menu, .main-content, .side-content{
+    height: 100%;
+    float: left;
+    display: table-column;
+  }
+  
+  .side-menu{
+    display: none;
+  }
+  .main-content{
+    width: 70%;
+    background: #fafafa;
+    h1{
+      margin: 40px 10%;
+     }
+    .box{
+      margin: 20px 10%;
+    }
+  }
+  .side-content{
+    width: 30%;
+  }
+
+  // Header
+  .header {
+    &__title {
+      float: left;
+    }
+    &__right{
+      display: none;
+      float: right;
+      border-top: 0.1rem solid $border-color;
+      background: #ffffff;
+      /*search form*/
+      form{
+        margin-left: 50px;
+        width: auto; 
+      }
+    }
+    
+  }
+
+  footer{
+   
+    > div, ul{
+      float: left;
+    }
+    .title{
+      line-height: 94px;
+    }
+    .text{
+      margin-left: 40px;
+      line-height: 94px;
+      position: relative;
+    }
+
+    .footer-right{
+      float: right;
+      ul{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li{
+            padding: 0 20px;
+            float: left;
+            a{
+              line-height: 94px;
+            }
+          }
+      }
+   }
+  }
+}

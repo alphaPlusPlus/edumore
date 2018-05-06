@@ -1,0 +1,48 @@
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+
+
+// From 1280px
+@include mq($from: mq1280) {
+    .header {
+      &__right{
+        display: block;
+    }
+    // Navigation
+    .nav {
+      float: left;
+      display: block;
+      box-shadow: none;
+
+      &__container {
+        clear: both;
+        overflow: hidden;
+      }
+
+      &__item {
+        float: left;
+        border: none;
+        
+      }
+    }
+  }
+  
+  .side-menu, .main-content, .side-content{
+    height: 100%;
+    float: left;
+    display: table-column;
+  }
+  
+  .side-menu, .side-content{
+    width: 20%;
+  }
+  .main-content{
+    width: 60%;
+  }
+}

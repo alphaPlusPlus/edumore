@@ -1,0 +1,63 @@
+
+/*
+================================================================================
+
+  General styles
+
+================================================================================
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  @include normalize-font;
+  position: relative;
+  color: $text-color;
+  font-family: $system-font-stack;
+
+  // Grey background modifier
+  &.body.body--grey-bg {
+    background-color: #fff;
+  }
+}
+
+// IE fix
+main {
+  display: block;
+  height: 100%;
+}
+
+.row{
+  clear: both;
+}
+
+
+
+
+
+
+/* ================================================================================
+   RESPONSIVENESS
+================================================================================ */
+
+// From 1024px
+@include mq($from: mq1024) {
+
+  // Body
+  body {
+    // Grey background modifier
+    &.body.body--grey-bg {
+      background-color: #fafafa;
+    }
+  }
+
+}
