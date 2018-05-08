@@ -58,6 +58,7 @@
   }
   .side-content{
     width: 30%;
+    display: block;
   }
 
   // Header
@@ -80,7 +81,7 @@
   }
 
   footer{
-   
+   display: block;
     > div, ul{
       float: left;
     }

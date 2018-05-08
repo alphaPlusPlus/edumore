@@ -513,6 +513,21 @@ main {
   margin: 15px 20px;
 }
 
+.header__right .content {
+  float: left;
+  display: block;
+  text-decoration: none;
+  margin: 15px 20px 15px 0px;
+  line-height: 26px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.header__right .content > img {
+  float: left;
+  margin-right: 5px;
+}
+
 .header__right .add-button {
   float: left;
   display: block;
@@ -598,9 +613,9 @@ main {
 /* Footer
 ============================================================ */
 footer {
+  display: none;
   background: #cccccc;
   border-top: 1px solid #e0e0e0;
-  display: block;
   clear: both;
   overflow: hidden;
   width: 100%;
@@ -802,6 +817,7 @@ footer .footer-right .social-media img {
 
 .side-content {
   background: #f2f2f2;
+  display: none;
 }
 
 .side-content .box {
@@ -897,6 +913,7 @@ footer .footer-right .social-media img {
   }
   .side-content {
     width: 30%;
+    display: block;
   }
   .header__title {
     float: left;
@@ -911,6 +928,9 @@ footer .footer-right .social-media img {
   .header__right form {
     margin-left: 50px;
     width: auto;
+  }
+  footer {
+    display: block;
   }
   footer > div, footer ul {
     float: left;

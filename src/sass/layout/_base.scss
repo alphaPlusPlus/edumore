@@ -76,6 +76,21 @@
       margin: 15px 20px;
     }
 
+    .content{
+      float: left;
+      display: block;
+      text-decoration: none;
+      margin: 15px 20px 15px 0px;
+      line-height: 26px;
+      font-size: 16px;
+      color:#666666;
+      > img{
+        float: left;
+        margin-right: 5px;
+      }
+
+    }
+
     .add-button{
       float: left;
       display: block;
@@ -168,10 +183,9 @@
 ============================================================ */
 
 footer{
- 
+  display: none;
   background: #cccccc;
   border-top: 1px solid #e0e0e0;
-  display: block;
   clear: both;
   overflow: hidden;
   width: 100%;
@@ -367,6 +381,7 @@ footer{
 
 .side-content{
   background: #f2f2f2;
+  display: none;
   .box{
     font-size: 14px;
     background: #ffffff;
