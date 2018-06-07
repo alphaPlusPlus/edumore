@@ -666,6 +666,7 @@ footer .footer-right .social-media img {
 .side-menu {
   width: 300px;
   position: absolute;
+  display: none;
 }
 
 .side-menu .inner {
