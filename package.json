@@ -3,7 +3,7 @@
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
     "gulp-clean-css": "*",
     "gulp-rename": "*",
@@ -17,6 +17,7 @@
     "@drewbot/sass-flexbox-grid": "^2.0.7",
     "flexboxgrid-sass": "^8.0.5",
     "gulp-install": "^1.1.0",
+    "gulp-wait": "0.0.2",
     "yarn": "^1.6.0"
   }
 }

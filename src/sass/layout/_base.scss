@@ -23,39 +23,26 @@
   &__button {
     float: left;
    margin-top: 23px;
-   margin-right: 25px;
+   margin-right: 5px;
    
   }
   &__title {
    color: #ff0000;
-   font-size: 35px;
+   font-size: 25px;
    line-height: 63px;
    font-weight: 800;
+   float: left;
   }
 
   &__right{
-    overflow: hidden;
-    border-top: 0.1rem solid $border-color;
-    background: #ffffff;
-    display: none;
-
-    // Opened state
-    &.js-opened {
-      display: block;
-    }
+    float: right;
+    display: block;
     /*search form*/
     form{
-      position: relative;
+      margin-top: 18px;
       float: left;
-      line-height: 63px;
       input{
-        width:285px;
-        background:#f2f2f2;
-        font-size: 12px;
-        outline: none;
-        border: none;
-        height: 23px;
-        padding: 0 13px;
+        display: none;
       }
       button{
         outline: none;
@@ -63,9 +50,6 @@
         background: url(../img/search.png);
         width: 26px;
         height: 26px;
-        position: absolute;
-        top: 16px;
-        right: -10px;
       }
     }
 
@@ -73,20 +57,23 @@
       float: left;
       display: block;
       text-decoration: none;
-      margin: 15px 20px;
+      margin: 18px 5px;
     }
 
     .content{
       float: left;
       display: block;
       text-decoration: none;
-      margin: 15px 20px 15px 0px;
+      margin: 18px 0px 15px 0px;
       line-height: 26px;
       font-size: 16px;
       color:#666666;
       > img{
         float: left;
         margin-right: 5px;
+      }
+      > span{
+        display: none;
       }
 
     }
@@ -95,7 +82,7 @@
       float: left;
       display: block;
       text-decoration: none;
-      margin: 15px 20px;
+      margin: 18px 0;
       font-size: 13px;
       font-weight: 500;
       height: 29px;
@@ -104,7 +91,10 @@
       color: #ffffff;
       padding: 0 10px;
       img{
-        margin-right:5px;
+        margin-right:0px;
+      }
+      > span{
+        display: none;
       }
     }
   }
@@ -115,19 +105,22 @@
 ============================================================ */
 
 .nav {
-  top: 4.2rem;
+  position: absolute;
+  top: 60px;
   left: 0;
   right: 0;
   z-index: 1000;
-  display: block;
   background-color: #fff;
   box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
   display: none;
+  visibility: hidden;
+  transition: all 2s linear 1s;
 
 
   // Opened state
   &.js-opened {
     display: block;
+    visibility: visible;
   }
 
 
@@ -239,10 +232,6 @@ footer{
   width: 100%;
   background: #f2f2f2;
 }
-.side-menu, .main-content, .side-content{
- 
-}
-
 .side-menu{
   display: none;
 }

@@ -457,42 +457,30 @@ main {
 .header__button {
   float: left;
   margin-top: 23px;
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 .header__title {
   color: #ff0000;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 63px;
   font-weight: 800;
+  float: left;
 }
 
 .header__right {
-  overflow: hidden;
-  border-top: 0.1rem solid #e7ecef;
-  background: #ffffff;
-  display: none;
+  float: right;
+  display: block;
   /*search form*/
 }
 
-.header__right.js-opened {
-  display: block;
-}
-
 .header__right form {
-  position: relative;
+  margin-top: 18px;
   float: left;
-  line-height: 63px;
 }
 
 .header__right form input {
-  width: 285px;
-  background: #f2f2f2;
-  font-size: 12px;
-  outline: none;
-  border: none;
-  height: 23px;
-  padding: 0 13px;
+  display: none;
 }
 
 .header__right form button {
@@ -501,23 +489,20 @@ main {
   background: url(../img/search.png);
   width: 26px;
   height: 26px;
-  position: absolute;
-  top: 16px;
-  right: -10px;
 }
 
 .header__right .profile {
   float: left;
   display: block;
   text-decoration: none;
-  margin: 15px 20px;
+  margin: 18px 5px;
 }
 
 .header__right .content {
   float: left;
   display: block;
   text-decoration: none;
-  margin: 15px 20px 15px 0px;
+  margin: 18px 0px 15px 0px;
   line-height: 26px;
   font-size: 16px;
   color: #666666;
@@ -528,11 +513,15 @@ main {
   margin-right: 5px;
 }
 
+.header__right .content > span {
+  display: none;
+}
+
 .header__right .add-button {
   float: left;
   display: block;
   text-decoration: none;
-  margin: 15px 20px;
+  margin: 18px 0;
   font-size: 13px;
   font-weight: 500;
   height: 29px;
@@ -543,25 +532,35 @@ main {
 }
 
 .header__right .add-button img {
-  margin-right: 5px;
+  margin-right: 0px;
+}
+
+.header__right .add-button > span {
+  display: none;
 }
 
 /* NAVIGATION
 ============================================================ */
 .nav {
-  top: 4.2rem;
+  position: absolute;
+  top: 60px;
   left: 0;
   right: 0;
   z-index: 1000;
-  display: block;
   background-color: #fff;
   -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
   display: none;
+  visibility: hidden;
+  -webkit-transition: all 2s linear 1s;
+  -o-transition: all 2s linear 1s;
+  -moz-transition: all 2s linear 1s;
+  transition: all 2s linear 1s;
 }
 
 .nav.js-opened {
   display: block;
+  visibility: visible;
 }
 
 .nav__container {
@@ -871,24 +870,16 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 48em) {
   .header__right {
-    display: none;
+    display: block;
+    float: right;
   }
   .header__title {
     float: left;
+    font-size: 35px;
   }
   .header .nav {
-    float: left;
-    display: block;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  .header .nav__container {
-    clear: both;
-    overflow: hidden;
-  }
-  .header .nav__item {
-    float: left;
-    border: none;
+    position: absolute;
+    top: 60px;
   }
 }
 
@@ -915,19 +906,67 @@ footer .footer-right .social-media img {
     width: 30%;
     display: block;
   }
+  .header__button {
+    float: left;
+    margin-right: 25px;
+  }
   .header__title {
     float: left;
+    font-size: 35px;
   }
   .header__right {
-    display: none;
-    float: right;
+    margin: 0;
+    overflow: hidden;
     border-top: 0.1rem solid #e7ecef;
     background: #ffffff;
+    float: right;
     /*search form*/
   }
+  .header__right.js-opened {
+    display: block;
+  }
   .header__right form {
-    margin-left: 50px;
-    width: auto;
+    position: relative;
+    float: left;
+    line-height: 63px;
+    margin-top: 0;
+  }
+  .header__right form input {
+    width: 285px;
+    background: #f2f2f2;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    height: 23px;
+    padding: 0 13px;
+    display: inline;
+  }
+  .header__right form button {
+    position: absolute;
+    top: 16px;
+    right: -10px;
+  }
+  .header__right .profile {
+    margin: 15px 20px;
+  }
+  .header__right .content {
+    margin: 15px 20px 15px 0px;
+  }
+  .header__right .content > span {
+    display: inline-block;
+  }
+  .header__right .add-button {
+    margin: 15px 20px;
+  }
+  .header__right .add-button img {
+    margin-right: 5px;
+  }
+  .header__right .add-button > span {
+    display: inline-block;
+  }
+  .header .nav {
+    top: 0;
+    position: relative;
   }
   footer {
     display: block;
@@ -970,6 +1009,13 @@ footer .footer-right .social-media img {
 @media (min-width: 80em) {
   .header__right {
     display: block;
+    float: right;
+    border-top: 0.1rem solid #e7ecef;
+    background: #ffffff;
+    /*search form*/
+  }
+  .header__right form {
+    width: auto;
   }
   .header .nav {
     float: left;

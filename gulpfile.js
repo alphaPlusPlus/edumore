@@ -19,6 +19,7 @@ const watch = require('gulp-watch');
 const rename = require('gulp-rename');
 const del = require('del');
 const runSequence = require('run-sequence');
+const wait = require('gulp-wait');
 
 
 
@@ -73,13 +74,12 @@ gulp.task('sync', () => {
 //
 gulp.task('css', () => {
   return gulp.src(paths.sass)
+    .pipe(wait(500))
     .pipe(sass({
-
       includePaths: [
         'node_modules/susy/sass',
         'node_modules/sass-mq'
       ],
-
       outputStyle: 'expanded'
 
     }).on('error', sass.logError))
@@ -91,7 +91,6 @@ gulp.task('css', () => {
     }))
 
     //.pipe(cleanCSS())
-
     .pipe(rename('styles.css'))
 
     .pipe(gulp.dest(paths.css))
