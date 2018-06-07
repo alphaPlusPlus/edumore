@@ -25,46 +25,46 @@
     
     <!-- Container -->
     <div class="header__container">
-      
-      <!-- Title -->
-      <a class="header__button"><img src="img/menu-icon.png"></a>
-
+  
       <!-- Title -->
       <div class="header__title">Edumore</div>
 
-      <!-- Navigation -->
-      <nav class="nav" id="nav">
-        
-        <!-- Container -->
-        <ul class="nav__container">
-          <li class="nav__item">
-            <a class="nav__link" href="#"><img src="img/home.png" />Home</a>
-          </li>
-          
-          <li class="nav__item">
-            <a class="nav__link" href="#"><img src="img/result.png" />Results</a>
-          </li>
-          
-          <li class="nav__item">
-            <a class="nav__link" href="#"><img src="img/quize.png" />My Quizes</a>
-          </li>
-          
-          <li class="nav__item">
-            <a class="nav__link" href="#"><span>19</span><img src="img/notification.png" />Notification</a>
-          </li>
-        </ul>
+      <!-- Title -->
+      <a class="header__button" id="hamburger-btn"><img src="img/menu-icon.png"></a>
       
-      </nav>
       <div class="header__right">
-            <form>
-                <input type="text" placeholder="Search For Knowladge..." />
-                <button type="submit"></button>
-            </form>
-            <a href="#" class="profile"><img src="img/profile.png"></a>
-            <a href="#" class="content"><img src="img/content.png">Content</a>
-            <a href="#" class="add-button"><img src="img/add.png">ADD A QUIZE</a>
+          <form>
+              <input type="text" placeholder="Search For Knowladge..." />
+              <button type="submit"></button>
+          </form>
+          <a href="#" class="profile"><img src="img/profile.png"></a>
+          <a href="#" class="content"><img src="img/content.png"><span>Content</span></a>
+          <a href="#" class="add-button"><img src="img/add.png"><span>ADD A QUIZE</span></a>
        </div>
     </div>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        
+      <!-- Container -->
+      <ul class="nav__container">
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img src="img/home.png" />Home</a>
+        </li>
+        
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img src="img/result.png" />Results</a>
+        </li>
+        
+        <li class="nav__item">
+          <a class="nav__link" href="#"><img src="img/quize.png" />My Quizes</a>
+        </li>
+        
+        <li class="nav__item">
+          <a class="nav__link" href="#"><span>19</span><img src="img/notification.png" />Notification</a>
+        </li>
+      </ul>
+    
+    </nav>
   </header>
   
   
@@ -205,6 +205,8 @@
               <a href="#">Add a Quiz!</a>
             </div>
         </div>
+
+        <a class="side-menu-btn" id="side-menu-btn"><img src="img/menu-icon.png"></a>
   </main>
 
   <footer>
@@ -223,12 +225,8 @@
         </div>
       </div>
   </footer>
-  
-  
-  
-  
   <!-- jQuery 3 -->
   <script src="js/vendor/jquery-3.2.1.min.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

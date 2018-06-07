@@ -11,6 +11,9 @@
 // From 1280px
 @include mq($from: mq1280) {
     .header {
+      &__button {
+        display: none;
+      }
       &__right{
         display: block;
         float: right;
@@ -18,7 +21,6 @@
         background: #ffffff;
         /*search form*/
         form{
-          
           width: auto; 
         }
     }
@@ -27,6 +29,8 @@
       float: left;
       display: block;
       box-shadow: none;
+      top: 0px;
+      position: relative;
 
       &__container {
         clear: both;
@@ -52,5 +56,13 @@
   }
   .main-content{
     width: 60%;
+  }
+  .side-menu{
+    position: relative;
+    left: 0;
+  }
+
+  .side-menu-btn{
+    display: none;
   }
 }

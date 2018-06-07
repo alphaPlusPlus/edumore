@@ -455,9 +455,10 @@ main {
 }
 
 .header__button {
-  float: left;
+  float: right;
   margin-top: 23px;
   margin-right: 5px;
+  margin-left: 20px;
 }
 
 .header__title {
@@ -551,16 +552,10 @@ main {
   -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
   display: none;
-  visibility: hidden;
-  -webkit-transition: all 2s linear 1s;
-  -o-transition: all 2s linear 1s;
-  -moz-transition: all 2s linear 1s;
-  transition: all 2s linear 1s;
 }
 
 .nav.js-opened {
   display: block;
-  visibility: visible;
 }
 
 .nav__container {
@@ -669,7 +664,8 @@ footer .footer-right .social-media img {
 }
 
 .side-menu {
-  display: none;
+  width: 300px;
+  position: absolute;
 }
 
 .side-menu .inner {
@@ -854,6 +850,17 @@ footer .footer-right .social-media img {
   margin-top: 10px;
 }
 
+.side-menu-btn {
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /*
 ================================================================================
 
@@ -905,10 +912,6 @@ footer .footer-right .social-media img {
   .side-content {
     width: 30%;
     display: block;
-  }
-  .header__button {
-    float: left;
-    margin-right: 25px;
   }
   .header__title {
     float: left;
@@ -965,8 +968,7 @@ footer .footer-right .social-media img {
     display: inline-block;
   }
   .header .nav {
-    top: 0;
-    position: relative;
+    top: 60px;
   }
   footer {
     display: block;
@@ -1007,6 +1009,9 @@ footer .footer-right .social-media img {
 ================================================================================
 */
 @media (min-width: 80em) {
+  .header__button {
+    display: none;
+  }
   .header__right {
     display: block;
     float: right;
@@ -1022,6 +1027,8 @@ footer .footer-right .social-media img {
     display: block;
     -webkit-box-shadow: none;
     box-shadow: none;
+    top: 0px;
+    position: relative;
   }
   .header .nav__container {
     clear: both;
@@ -1041,5 +1048,12 @@ footer .footer-right .social-media img {
   }
   .main-content {
     width: 60%;
+  }
+  .side-menu {
+    position: relative;
+    left: 0;
+  }
+  .side-menu-btn {
+    display: none;
   }
 }

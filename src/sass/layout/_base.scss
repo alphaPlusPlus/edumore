@@ -21,10 +21,10 @@
    clear: both;
   }
   &__button {
-    float: left;
-   margin-top: 23px;
-   margin-right: 5px;
-   
+    float: right;
+    margin-top: 23px;
+    margin-right: 5px;
+    margin-left:20px;
   }
   &__title {
    color: #ff0000;
@@ -113,14 +113,9 @@
   background-color: #fff;
   box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
   display: none;
-  visibility: hidden;
-  transition: all 2s linear 1s;
-
-
   // Opened state
   &.js-opened {
     display: block;
-    visibility: visible;
   }
 
 
@@ -233,11 +228,12 @@ footer{
   background: #f2f2f2;
 }
 .side-menu{
-  display: none;
+  width: 300px;
+  position: absolute;
+  
 }
 
 .side-menu{
- 
 .inner{
   background: #f2f2f2;
   height: 100%;
@@ -401,4 +397,16 @@ footer{
       margin-top: 10px;
     }
   }
+}
+
+
+.side-menu-btn{
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }

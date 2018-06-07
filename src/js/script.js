@@ -34,3 +34,12 @@ $('#hamburger-btn').click(function() {
 
   }
 });
+
+//
+// Open/Close side menu
+//
+$('.side-menu-btn').click(function() {
+  
+  var $sidemenu = $('.side-menu');
+  $sidemenu.toggle(100);
+});
