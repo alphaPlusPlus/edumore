@@ -775,7 +775,7 @@ footer .footer-right .social-media img {
 
 .main-content {
   background: #fafafa;
-  margin-top: 150px;
+  padding-top: 200px;
 }
 
 .main-content h1 {
@@ -874,6 +874,7 @@ footer .footer-right .social-media img {
 .side-content {
   background: #f2f2f2;
   display: none;
+  padding-top: 200px;
 }
 
 .side-content .box {
@@ -1137,7 +1138,7 @@ footer .footer-right .social-media img {
     display: none;
   }
   .side-menu, .main-content, .side-content {
-    margin: 0;
+    padding-top: 0;
     height: 100%;
     float: left;
     display: table-column;
