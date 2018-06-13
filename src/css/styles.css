@@ -693,7 +693,9 @@ footer .footer-right .social-media img {
 
 .side-menu {
   width: 300px;
-  position: absolute;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
   display: none;
 }
 
@@ -914,6 +916,7 @@ footer .footer-right .social-media img {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .side-menu-btn img {

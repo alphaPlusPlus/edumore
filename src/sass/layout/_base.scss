@@ -254,7 +254,9 @@ footer{
 }
 .side-menu{
   width: 300px;
-  position: absolute;
+  top: 0;
+  z-index: 1000;
+  position: fixed;
   display: none;
 }
 
@@ -459,6 +461,7 @@ footer{
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 10000;
 
   img{
     width: 25px;
