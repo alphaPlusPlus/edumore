@@ -11,8 +11,9 @@
 // From 1280px
 @include mq($from: mq1280) {
     .header {
-      &__button {
-        display: none;
+      &__container {
+        clear: none;
+        overflow: visible;
       }
       &__right{
         display: block;
@@ -26,6 +27,8 @@
     }
     // Navigation
     .nav {
+      background-color: #ffffff;
+      clear: none;
       float: left;
       display: block;
       box-shadow: none;
@@ -42,6 +45,22 @@
         border: none;
         
       }
+
+      &__link {
+        border-left:none;
+        line-height: 60px;
+        margin: 0;
+        img{
+          display:block;
+        }
+        span{
+          display: block;
+        }
+      }
+    }
+
+    .sub-nav-mobile{
+      display: none;
     }
   }
   

@@ -446,12 +446,14 @@ main {
   -webkit-box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.04);
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.04);
   display: block;
-  height: 63px;
-  padding: 0 8px;
+  min-height: 63px;
+  padding: 0;
 }
 
 .header__container {
   clear: both;
+  overflow: hidden;
+  padding: 0 8px;
 }
 
 .header__button {
@@ -463,7 +465,7 @@ main {
 
 .header__title {
   color: #ff0000;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 63px;
   font-weight: 800;
   float: left;
@@ -543,53 +545,58 @@ main {
 /* NAVIGATION
 ============================================================ */
 .nav {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
-  display: none;
-}
-
-.nav.js-opened {
+  background-color: #e6e6e6;
   display: block;
+  clear: both;
+  overflow: hidden;
 }
 
 .nav__container {
+  clear: both;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
+  display: block;
+  overflow: hidden;
 }
 
 .nav__item {
-  border-top: 0.1rem solid #e7ecef;
+  float: left;
+  height: 60px;
 }
 
 .nav__link {
   display: block;
   color: #3e75b2;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 63px;
+  font-weight: 600;
+  line-height: 40px;
   text-decoration: none;
   color: #666666;
-  padding-left: 25px;
+  padding: 0px 11px;
+  margin: 10px 0;
   position: relative;
+  border-left: 1px solid #c9c9c9;
+}
+
+.nav__link.home {
+  border-left: none;
+}
+
+.nav__link.selected {
+  color: #ff0000;
 }
 
 .nav__link img {
-  display: block;
+  display: none;
   float: left;
   margin-top: 18px;
   margin-right: 5px;
 }
 
 .nav__link span {
-  display: inline-block;
+  display: none;
   position: absolute;
   width: 14px;
   height: 14px;
@@ -602,6 +609,27 @@ main {
   color: #fff;
   font-weight: 700;
   left: 41px;
+}
+
+.sub-nav-mobile {
+  height: 60px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.sub-nav-mobile > a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #7d7d7d;
+  text-decoration: none;
+  margin: 0px 12px;
+}
+
+.sub-nav-mobile > a.selected {
+  border-bottom: 5px solid #7d7d7d;
 }
 
 /* Footer
@@ -779,6 +807,8 @@ footer .footer-right .social-media img {
 
 .main-content .box > div h2 {
   margin-top: 0;
+  color: #000;
+  font-size: 1.3em;
 }
 
 .main-content .box > div b {
@@ -804,11 +834,35 @@ footer .footer-right .social-media img {
   float: left;
   text-decoration: none;
   color: #000;
-  margin-right: 40px;
+  margin-right: 20px;
+}
+
+.main-content .box > div .controls > a.add img {
+  background: #000;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.main-content .box > div .controls > a.assign {
+  margin-top: 10px;
+  clear: both;
 }
 
 .main-content .box > div .controls > .share {
-  float: right;
+  margin-top: 10px;
+  float: left;
+}
+
+.main-content .box > div .controls > .share > a {
+  display: inline-block;
+}
+
+.main-content .box > div .controls > .share > a > img {
+  margin: 0;
+}
+
+.main-content .box > div .controls > .share > a.more {
+  margin-bottom: 4px;
 }
 
 .side-content {
@@ -854,12 +908,17 @@ footer .footer-right .social-media img {
 .side-menu-btn {
   display: block;
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
-  background: #ffffff;
+  background: #ff0000;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.side-menu-btn img {
+  width: 25px;
+  height: 22px;
 }
 
 /*
@@ -885,9 +944,20 @@ footer .footer-right .social-media img {
     float: left;
     font-size: 35px;
   }
-  .header .nav {
-    position: absolute;
-    top: 60px;
+  .sub-nav-mobile {
+    overflow: hidden;
+  }
+  .main-content .box > div .controls > a {
+    margin-right: 40px;
+  }
+  .main-content .box > div .controls > a.assign {
+    margin-top: 0px;
+    float: left;
+    clear: none;
+  }
+  .main-content .box > div .controls > .share {
+    margin-top: 0px;
+    float: right;
   }
 }
 
@@ -968,8 +1038,8 @@ footer .footer-right .social-media img {
   .header__right .add-button > span {
     display: inline-block;
   }
-  .header .nav {
-    top: 60px;
+  .sub-nav-mobile {
+    overflow: hidden;
   }
   footer {
     display: block;
@@ -1010,8 +1080,9 @@ footer .footer-right .social-media img {
 ================================================================================
 */
 @media (min-width: 80em) {
-  .header__button {
-    display: none;
+  .header__container {
+    clear: none;
+    overflow: visible;
   }
   .header__right {
     display: block;
@@ -1024,6 +1095,8 @@ footer .footer-right .social-media img {
     width: auto;
   }
   .header .nav {
+    background-color: #ffffff;
+    clear: none;
     float: left;
     display: block;
     -webkit-box-shadow: none;
@@ -1038,6 +1111,20 @@ footer .footer-right .social-media img {
   .header .nav__item {
     float: left;
     border: none;
+  }
+  .header .nav__link {
+    border-left: none;
+    line-height: 60px;
+    margin: 0;
+  }
+  .header .nav__link img {
+    display: block;
+  }
+  .header .nav__link span {
+    display: block;
+  }
+  .header .sub-nav-mobile {
+    display: none;
   }
   .side-menu, .main-content, .side-content {
     height: 100%;

@@ -14,11 +14,14 @@
   background-color: #fff;
   box-shadow: 0 0.1rem 0.3rem rgba(#000, 0.04);
   display: block;
-  height: 63px;
-  padding: 0 8px;
+  min-height: 63px;
+  padding: 0;
+  
 
   &__container {
    clear: both;
+   overflow: hidden;
+   padding: 0 8px;
   }
   &__button {
     float: right;
@@ -28,7 +31,7 @@
   }
   &__title {
    color: #ff0000;
-   font-size: 25px;
+   font-size: 30px;
    line-height: 63px;
    font-weight: 800;
    float: left;
@@ -105,51 +108,54 @@
 ============================================================ */
 
 .nav {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #fff;
-  box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
-  display: none;
-  // Opened state
-  &.js-opened {
-    display: block;
-  }
+  
+  background-color: #e6e6e6;
+  display: block;
+  clear: both;
+  overflow: hidden;
 
 
   &__container {
+    clear: both;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     list-style-type: none;
+    display: block;
+    overflow: hidden;
   }
 
   &__item {
-    border-top: 0.1rem solid $border-color;
-
+    float: left;
+    height: 60px;
   }
   &__link {
     display: block;
     color: $main-color;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 63px;
+    font-weight: 600;
+    line-height: 40px;
     text-decoration: none;
     color: $text-color;
-    padding-left: 25px;
+    padding:0px 11px;
+    margin: 10px 0;
     position: relative;
-   
+    border-left: 1px solid #c9c9c9;
+    &.home{
+      border-left: none;
+    }
+    &.selected{
+      color:#ff0000;
+    }
     
     img{
-      display:block;
+      display:none;
       float: left;
       margin-top: 18px;
       margin-right: 5px;
     }
     span{
-      display: inline-block;
+      display: none;
       position: absolute;
       width:14px;
       height: 14px;
@@ -162,6 +168,25 @@
       color: #fff;
       font-weight: 700;
       left: 41px;
+    }
+  }
+}
+
+.sub-nav-mobile{
+  height: 60px; 
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  >a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 55px;
+    color:#7d7d7d;
+    text-decoration: none;
+    margin:0px 12px;
+    &.selected{
+      border-bottom: 5px solid #7d7d7d;
     }
   }
 }
@@ -310,7 +335,8 @@ footer{
     margin: 40px 10%;
     margin: 0px 10px;
     margin-bottom: 20px;
-    display: block;}
+    display: block;
+  }
   .box{
     margin: 20px 10%;
     margin: 0px 10px;
@@ -334,6 +360,8 @@ footer{
 
       h2{
         margin-top: 0;
+        color: #000;
+        font-size: 1.3em;
       }
       b{
         display: block;
@@ -354,10 +382,32 @@ footer{
           float: left;
           text-decoration: none;
           color: #000;
-          margin-right: 40px;
+          margin-right: 20px;
+          &.add{
+            img{
+              background: #000;
+              padding: 3px;
+              border-radius: 50%;
+            }
+          }
+          &.assign{
+            margin-top: 10px;
+            clear: both;
+          }
         }
         >.share{
-          float: right;;
+          margin-top: 10px;
+          float: left;
+
+          >a{
+            display: inline-block;
+            >img{
+              margin: 0;
+            }
+            &.more{
+              margin-bottom: 4px;
+            }
+          }
         }
       }
     }
@@ -403,10 +453,15 @@ footer{
 .side-menu-btn{
   display: block;
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
-  background: #ffffff;
+  background: #ff0000;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
+
+  img{
+    width: 25px;
+    height: 22px;
+  }
 }

@@ -17,9 +17,30 @@
       float: left;
       font-size: 35px;
     }
-    .nav {
-      position: absolute;
-      top: 60px;
+  }
+
+  .sub-nav-mobile{
+    overflow: hidden;
+  }
+  .main-content{
+    
+    .box{
+      >div{
+        .controls{
+          >a {
+            margin-right: 40px;
+            &.assign{
+              margin-top: 0px;
+              float: left;
+              clear:none;
+            }
+          }
+          >.share{
+            margin-top: 0px;
+            float: right;
+          }
+        }
+      }
     }
   }
 }
@@ -112,11 +133,9 @@
         }
       }
     }
-
-    .nav {
-      top: 60px;
-      
-    }
+  }
+  .sub-nav-mobile{
+    overflow: hidden;
   }
 
   footer{
