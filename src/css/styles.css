@@ -440,7 +440,8 @@ main {
 ================================================================================
 */
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 10;
   background-color: #fff;
   -webkit-box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.04);
@@ -448,6 +449,7 @@ main {
   display: block;
   min-height: 63px;
   padding: 0;
+  width: 100%;
 }
 
 .header__container {
@@ -773,6 +775,7 @@ footer .footer-right .social-media img {
 
 .main-content {
   background: #fafafa;
+  margin-top: 150px;
 }
 
 .main-content h1 {
@@ -1084,6 +1087,9 @@ footer .footer-right .social-media img {
 ================================================================================
 */
 @media (min-width: 80em) {
+  .header {
+    position: relative;
+  }
   .header__container {
     clear: none;
     overflow: visible;
@@ -1131,6 +1137,7 @@ footer .footer-right .social-media img {
     display: none;
   }
   .side-menu, .main-content, .side-content {
+    margin: 0;
     height: 100%;
     float: left;
     display: table-column;

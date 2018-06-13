@@ -11,6 +11,7 @@
 // From 1280px
 @include mq($from: mq1280) {
     .header {
+      position: relative;
       &__container {
         clear: none;
         overflow: visible;
@@ -65,6 +66,7 @@
   }
   
   .side-menu, .main-content, .side-content{
+    margin: 0;
     height: 100%;
     float: left;
     display: table-column;
