@@ -34,3 +34,15 @@
 @import 'layout/mobile';
 @import 'layout/tablets';
 @import 'layout/desktop';
+
+
+
+/* pages
+------------------------------------ */
+
+/* channel page
+------------------------------------ */
+@import 'pages/channel/base';
+@import 'pages/channel/mobile';
+@import 'pages/channel/tablets';
+@import 'pages/channel/desktop';

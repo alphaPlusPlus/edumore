@@ -1,0 +1,71 @@
+.channel-page{
+  .top-image{
+    height: 140px;
+    background: #cccccc;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    line-height: 140px;
+  }
+
+  .channel-header{
+    clear: both;
+    overflow: hidden;
+    margin: 40px 10px;
+    >span{
+      float: left;
+      width:80px;
+      height: 80px;
+      background: #4083f6;
+      border: 1px solid #313b9c;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 80px;
+      > img{
+        margin-top: 15px;
+      }
+    }
+
+    >div{
+      float: left;
+      width: 100%;
+      margin-left: 15px;
+
+      h1{
+        margin: 0;
+        display: inline-block;
+      }
+
+      >span{
+        font-size: 1.5em;
+        border-left: 1px solid #000000;
+        padding: 0 5px;
+        margin: 0 5px;
+      }
+      > div{
+        display: block;
+        margin: 10px 0px;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .channel-menu{
+    margin: 20px 10px;
+    clear: both;
+    overflow: hidden;
+    >a{
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 55px;
+      color:#7d7d7d;
+      text-decoration: none;
+      margin:0px 12px;
+      &.selected{
+        border-bottom: 5px solid #7d7d7d;
+      }
+    }
+  }
+}

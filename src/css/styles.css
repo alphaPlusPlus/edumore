@@ -404,7 +404,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  color: #666666;
+  color: #000000;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -575,7 +575,7 @@ main {
   font-weight: 600;
   line-height: 40px;
   text-decoration: none;
-  color: #666666;
+  color: #000000;
   padding: 0px 11px;
   margin: 10px 0;
   position: relative;
@@ -673,7 +673,7 @@ footer .footer-right ul li a {
   line-height: 30px;
   font-size: 16px;
   text-decoration: none;
-  color: #666666;
+  color: #000000;
 }
 
 footer .footer-right .social-media {
@@ -1157,5 +1157,127 @@ footer .footer-right .social-media img {
   }
   .side-menu-btn {
     display: none;
+  }
+}
+
+/* pages
+------------------------------------ */
+/* channel page
+------------------------------------ */
+.channel-page .top-image {
+  height: 140px;
+  background: #cccccc;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 140px;
+}
+
+.channel-page .channel-header {
+  clear: both;
+  overflow: hidden;
+  margin: 40px 10px;
+}
+
+.channel-page .channel-header > span {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background: #4083f6;
+  border: 1px solid #313b9c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+}
+
+.channel-page .channel-header > span > img {
+  margin-top: 15px;
+}
+
+.channel-page .channel-header > div {
+  float: left;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.channel-page .channel-header > div h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+.channel-page .channel-header > div > span {
+  font-size: 1.5em;
+  border-left: 1px solid #000000;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.channel-page .channel-header > div > div {
+  display: block;
+  margin: 10px 0px;
+  font-size: 1.5em;
+}
+
+.channel-page .channel-menu {
+  margin: 20px 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+.channel-page .channel-menu > a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #7d7d7d;
+  text-decoration: none;
+  margin: 0px 12px;
+}
+
+.channel-page .channel-menu > a.selected {
+  border-bottom: 5px solid #7d7d7d;
+}
+
+/*
+================================================================================
+
+  "Header" mobile styles
+
+================================================================================
+*/
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+@media (min-width: 64em) {
+  .channel-page .main-content {
+    width: 100%;
+  }
+}
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+@media (min-width: 80em) {
+  .channel-page .main-content {
+    width: 80%;
+  }
+  .channel-page .channel-header {
+    margin: 40px 10%;
+  }
+  .channel-page .channel-header > div {
+    float: left;
+    width: 80%;
+  }
+  .channel-page .channel-menu {
+    margin: 20px 10%;
   }
 }

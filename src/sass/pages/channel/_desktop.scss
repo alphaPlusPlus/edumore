@@ -1,0 +1,29 @@
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+
+
+// From 1280px
+@include mq($from: mq1280) {
+  .channel-page{
+    .main-content{
+      width: 80%;
+    }
+    .channel-header{
+      margin: 40px 10%;
+      >div{
+        float: left;
+        width: 80%;
+      }
+    }
+
+    .channel-menu{
+      margin: 20px 10%;
+    }
+  }
+}
