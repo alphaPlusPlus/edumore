@@ -1,0 +1,31 @@
+
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+
+@include mq($from: mq768) {
+ 
+}
+
+// From 1024px
+@include mq($from: mq1024) {
+  .my-content{
+    .main-content{
+      width: 100%;
+      .item{
+        margin: 20px 10%;
+        >.box{
+          float: left;
+          width: 50%;
+        }
+        >.controls{
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}

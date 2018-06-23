@@ -1281,3 +1281,79 @@ footer .footer-right .social-media img {
     margin: 20px 10%;
   }
 }
+
+/* my content
+------------------------------------ */
+.my-content .item {
+  margin: 20px 10px;
+  clear: both;
+  overflow: hidden;
+}
+
+.my-content .item > .box {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+.my-content .item > .box > div {
+  border: none;
+}
+
+.my-content .item > .controls {
+  float: right;
+  margin-top: 20px;
+}
+
+.my-content .item > .controls > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+
+/*
+================================================================================
+
+  "Header" mobile styles
+
+================================================================================
+*/
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+@media (min-width: 64em) {
+  .my-content .main-content {
+    width: 100%;
+  }
+  .my-content .main-content .item {
+    margin: 20px 10%;
+  }
+  .my-content .main-content .item > .box {
+    float: left;
+    width: 50%;
+  }
+  .my-content .main-content .item > .controls {
+    margin-top: 100px;
+  }
+}
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+@media (min-width: 80em) {
+  .my-content .main-content {
+    width: 80%;
+  }
+  .my-content .main-content .item {
+    margin: 20px 10%;
+  }
+}

@@ -1,0 +1,25 @@
+.my-content{
+  .item{
+    margin: 20px 10px;
+    clear: both;
+    overflow: hidden;
+    >.box{
+        float: none;
+        width: 100%;
+        margin: 0;
+        >div{
+            border: none;
+        }
+    }
+    >.controls{
+        float: right;
+        margin-top: 20px;
+        >a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.5em;
+            margin: 0 20px;
+        }
+    }
+  }
+}
