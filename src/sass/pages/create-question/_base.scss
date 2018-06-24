@@ -1,6 +1,6 @@
 .create-question{
   .question-content{
-    margin: 20px 10px;
+    margin: 20px 10px 0 10px;
       >.question{
         background: #ffffff;
         width: 100%;
@@ -21,9 +21,16 @@
             }
         }
         form{
-            padding: 20px;
+            p{
+                font-size: 16px;
+                color: #cccccc;
+                margin: 20px 0;
+                display: block;
+            }
+            padding: 0 20px 20px 20px;
             label{
-                font-size: 1.5em;
+                font-size: 16px;
+                color: #666666;
                 display: block;
                 margin-bottom: 15px;
                 font-weight: 600;
@@ -34,12 +41,12 @@
                 width: 100%;
                 border-bottom: 1px solid #d9d9d9;
                 color: #000000;
-                font-size: 1.2em;
+                font-size: 14px;
             
             }
             a{
                 margin: 30px 0;
-                font-size: 1.5em;
+                font-size: 14px;
                 text-decoration: none;
                 color:$text-color;
                 display: block;
@@ -53,16 +60,15 @@
                 }
 
                 &.add-another{
-                    font-size: 2m;
+                    font-size: 17px;
                     color: #000000;
-                    font-weight: 600;
                     height: 30px;
                     line-height: 30px;
                 }
             }
             span{
                 display: block;
-                font-size: 1.5em;
+                font-size: 14px;;
             }
             .option-question{
                 position: relative;
@@ -85,12 +91,12 @@
         background: #ffffff;
         width: 100%;
         box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
-
+        padding: 0 0 10px 0;
         >span{
             font-size: 1.6em;
             padding-left: 13px;
-            height: 35px;
-            line-height: 35px;
+            height: 50px;
+            line-height: 50px;
             display: block;
             background: #fafafa;
         }
@@ -102,23 +108,15 @@
             color: #000;
             padding: 0 18px;
             margin: 15px;
-            font-size: 1.5em;
-            >span{
-                display: inline-block;
-                color: $text-color;
-                font-size: 0.8em;
-                border-left: 1px solid #999999;
-                height: 15px;
-                line-height: 15px;
-                padding: 0 7px;
-            }
+            font-size: 17px;
+            font-weight: 600;
         }
     }
   }
   .controls{
       clear: both;
       display: block;
-      margin: 20px 10px;
+      margin: 0px 10px;
       background: #3ab54a;
       color: #ffffff;
       height: 40px;

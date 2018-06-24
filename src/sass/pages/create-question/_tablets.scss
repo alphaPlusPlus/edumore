@@ -17,11 +17,12 @@
     .main-content{
       width: 100%;
       .controls{
-      
-        margin: 20px 10%;
-    }
+        margin: 0 10%;
+      }
       .question-content{
-        margin: 20px 10%;
+        margin: 20px 10% 0 10%;
+        display: block;
+        overflow: hidden;
         >.question  {
           float: left;
           width: 65%;
