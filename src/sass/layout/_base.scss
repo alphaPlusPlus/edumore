@@ -473,3 +473,31 @@ footer{
     height: 22px;
   }
 }
+
+.breadcrumb{
+  margin: 5px 40px 20px 40px;
+  clear: both;
+  display: block;
+  >a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: $text-color;
+    margin-right: 6px;
+    &:after{
+      content: '>';
+      margin-left: 5px;
+
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+
+.main-header{
+  font-size: 2.5em;
+  display: block;
+  margin: 0px 10px;
+}

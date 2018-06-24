@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 ================================================================================
 
@@ -404,7 +405,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  color: #000000;
+  color: #797979;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -575,7 +576,7 @@ main {
   font-weight: 600;
   line-height: 40px;
   text-decoration: none;
-  color: #000000;
+  color: #797979;
   padding: 0px 11px;
   margin: 10px 0;
   position: relative;
@@ -673,7 +674,7 @@ footer .footer-right ul li a {
   line-height: 30px;
   font-size: 16px;
   text-decoration: none;
-  color: #000000;
+  color: #797979;
 }
 
 footer .footer-right .social-media {
@@ -928,6 +929,34 @@ footer .footer-right .social-media img {
   height: 22px;
 }
 
+.breadcrumb {
+  margin: 5px 40px 20px 40px;
+  clear: both;
+  display: block;
+}
+
+.breadcrumb > a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #797979;
+  margin-right: 6px;
+}
+
+.breadcrumb > a:after {
+  content: '>';
+  margin-left: 5px;
+}
+
+.breadcrumb > a:last-child:after {
+  display: none;
+}
+
+.main-header {
+  font-size: 2.5em;
+  display: block;
+  margin: 0px 10px;
+}
+
 /*
 ================================================================================
 
@@ -1076,6 +1105,9 @@ footer .footer-right .social-media img {
   }
   footer .footer-right ul li a {
     line-height: 94px;
+  }
+  .main-header {
+    margin: 0px 10%;
   }
 }
 
@@ -1355,5 +1387,335 @@ footer .footer-right .social-media img {
   }
   .my-content .main-content .item {
     margin: 20px 10%;
+  }
+}
+
+/*Course
+------------------------------------ */
+.course .course-content {
+  margin: 20px 10px;
+}
+
+.course .course-content > .video {
+  background: #ffffff;
+  width: 100%;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.course .course-content > .video > .tabs {
+  background: #fafafa;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+
+.course .course-content > .video > .tabs > a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: #797979;
+  font-size: 1.6em;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+}
+
+.course .course-content > .video > .tabs > a.selected {
+  background: #ffffff;
+}
+
+.course .course-content > .video > .content {
+  clear: both;
+  display: block;
+  margin: 10px;
+  background: #e6e6e6;
+  height: 380px;
+  text-align: center;
+  line-height: 380px;
+}
+
+.course .course-content > .other-quizes {
+  background: #ffffff;
+  width: 100%;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.course .course-content > .other-quizes > span {
+  font-size: 1.6em;
+  padding-left: 13px;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  background: #fafafa;
+}
+
+.course .course-content > .other-quizes > div {
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  background: #fafafa;
+  color: #000;
+  padding: 0 18px;
+  margin: 15px;
+  font-size: 1.5em;
+}
+
+.course .course-content > .other-quizes > div > span {
+  display: inline-block;
+  color: #797979;
+  font-size: 0.8em;
+  border-left: 1px solid #999999;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 7px;
+}
+
+/*
+================================================================================
+
+  "Header" mobile styles
+
+================================================================================
+*/
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+@media (min-width: 64em) {
+  .course .main-content {
+    width: 100%;
+  }
+  .course .main-content .course-content {
+    margin: 20px 10%;
+  }
+  .course .main-content .course-content > .video {
+    float: left;
+    width: 65%;
+  }
+  .course .main-content .course-content > .other-quizes {
+    float: right;
+    width: 30%;
+  }
+}
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+@media (min-width: 80em) {
+  .course .main-content {
+    width: 80%;
+  }
+}
+
+/*create-question
+------------------------------------ */
+.create-question .question-content {
+  margin: 20px 10px;
+}
+
+.create-question .question-content > .question {
+  background: #ffffff;
+  width: 100%;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.create-question .question-content > .question > a {
+  height: 35px;
+  line-height: 35px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  background: #666666;
+  display: block;
+  padding: 0 20px;
+  border-radius: 3px;
+}
+
+.create-question .question-content > .question > a:before {
+  content: '◀';
+  margin-right: 5px;
+}
+
+.create-question .question-content > .question form {
+  padding: 20px;
+}
+
+.create-question .question-content > .question form label {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.create-question .question-content > .question form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  color: #000000;
+  font-size: 1.2em;
+}
+
+.create-question .question-content > .question form a {
+  margin: 30px 0;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #797979;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+}
+
+.create-question .question-content > .question form a > img {
+  margin-right: 5px;
+  float: left;
+}
+
+.create-question .question-content > .question form a.add-another {
+  font-size: 2m;
+  color: #000000;
+  font-weight: 600;
+  height: 30px;
+  line-height: 30px;
+}
+
+.create-question .question-content > .question form span {
+  display: block;
+  font-size: 1.5em;
+}
+
+.create-question .question-content > .question form .option-question {
+  position: relative;
+  width: 100%;
+  margin: 25px 0;
+  display: block;
+}
+
+.create-question .question-content > .question form .option-question img {
+  position: absolute;
+}
+
+.create-question .question-content > .question form .option-question input {
+  margin-left: 25px;
+  width: -webkit-calc(100% - 35px);
+  width: -moz-calc(100% - 35px);
+  width: calc(100% - 35px);
+}
+
+.create-question .question-content > .other-questions {
+  background: #ffffff;
+  width: 100%;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.create-question .question-content > .other-questions > span {
+  font-size: 1.6em;
+  padding-left: 13px;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  background: #fafafa;
+}
+
+.create-question .question-content > .other-questions > div {
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  background: #fafafa;
+  color: #000;
+  padding: 0 18px;
+  margin: 15px;
+  font-size: 1.5em;
+}
+
+.create-question .question-content > .other-questions > div > span {
+  display: inline-block;
+  color: #797979;
+  font-size: 0.8em;
+  border-left: 1px solid #999999;
+  height: 15px;
+  line-height: 15px;
+  padding: 0 7px;
+}
+
+.create-question .controls {
+  clear: both;
+  display: block;
+  margin: 20px 10px;
+  background: #3ab54a;
+  color: #ffffff;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+}
+
+.create-question .controls a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6em;
+  margin: 0 5px;
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+}
+
+.create-question .controls a:last-child {
+  margin-right: 60px;
+  border: none;
+}
+
+/*
+================================================================================
+
+  "Header" mobile styles
+
+================================================================================
+*/
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+@media (min-width: 64em) {
+  .create-question .main-content {
+    width: 100%;
+  }
+  .create-question .main-content .controls {
+    margin: 20px 10%;
+  }
+  .create-question .main-content .question-content {
+    margin: 20px 10%;
+  }
+  .create-question .main-content .question-content > .question {
+    float: left;
+    width: 65%;
+  }
+  .create-question .main-content .question-content > .other-questions {
+    float: right;
+    width: 30%;
+  }
+}
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+@media (min-width: 80em) {
+  .create-question .main-content {
+    width: 80%;
   }
 }

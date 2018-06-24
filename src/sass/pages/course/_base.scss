@@ -1,0 +1,73 @@
+.course{
+  .course-content{
+    margin: 20px 10px;
+      >.video{
+        background: #ffffff;
+        width: 100%;
+        box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
+        >.tabs{
+            background: #fafafa;
+            clear: both;
+            display: block;
+            overflow: hidden;
+            >a{
+                text-decoration: none;
+                padding: 0 20px;
+                color:$text-color;
+                font-size: 1.6em;
+                height: 35px;
+                line-height: 35px;
+               
+                float: left;
+                &.selected{
+                    background: #ffffff;
+                }
+            }
+        }
+        >.content{
+            clear: both;
+            display: block;
+            margin: 10px;
+            background: #e6e6e6;
+            height: 380px;
+            text-align: center;
+            line-height: 380px;
+            
+
+        }
+      }
+      >.other-quizes{
+        background: #ffffff;
+        width: 100%;
+        box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
+
+        >span{
+            font-size: 1.6em;
+            padding-left: 13px;
+            height: 35px;
+            line-height: 35px;
+            display: block;
+            background: #fafafa;
+        }
+        >div{
+            height: 60px;
+            line-height: 60px;
+            display: block;
+            background: #fafafa;
+            color: #000;
+            padding: 0 18px;
+            margin: 15px;
+            font-size: 1.5em;
+            >span{
+                display: inline-block;
+                color: $text-color;
+                font-size: 0.8em;
+                border-left: 1px solid #999999;
+                height: 15px;
+                line-height: 15px;
+                padding: 0 7px;
+            }
+        }
+    }
+  }
+}

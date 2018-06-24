@@ -76,12 +76,12 @@
   <!-- ==========================
     MAIN
   =========================== -->
-  <main class="my-content">
+  <main class="create-question">
       <div class="breadcrumb">
-          <a href="#">Home</a>
-          <a href="#">Sub page</a>
-          <a href="#">Sub Sub page</a>
-        </div>
+        <a href="#">Home</a>
+        <a href="#">Sub page</a>
+        <a href="#">Sub Sub page</a>
+      </div>
       <div class="row table-row">
         <div class="side-menu">
           <div class="inner">
@@ -133,37 +133,70 @@
           
         </div>
         <div class="main-content">
-          
-          <h1>My contents</h1>
-          <div class="item">
-              <div class="box">
-                  <div>
-                    <h2><img src="img/quize-icon.png"> Högskoleprovet</h2>
-                    <b>Ordkunskap 2017 <span>| 200 frågor</span></b>
-                    Ordkunskap 20 är en del av serien för ordkunskap i högskoleprovet.
-                  </div>
-              </div>
-              <div class="controls">
-                <a href="">Delete</a>
-                <a href="">Edit Draft</a>
-                <a href="">Publish</a>
-              </div>
-          </div>
+          <span class="main-header">Create a Question/s</span>
 
-          <div class="item">
-              <div class="box">
-                  <div>
-                    <h2><img src="img/quize-icon.png"> Högskoleprovet</h2>
-                    <b>Ordkunskap 2017 <span>| 200 frågor</span></b>
-                    Ordkunskap 20 är en del av serien för ordkunskap i högskoleprovet.
+          <div class="question-content">
+              <div class="question">
+                <a href="#">Back to Quize settings</a>
+                <form>
+                  <p>
+                      You have successfully created the settings of your Quize. Now you can add questions.
+                  </span>
+                  <label>Question 1:</label>
+                  <input type="text" value="Test test test test test test test test test"/>
+                  <a href="#"><img src="img/ikon_add_image.png"> Add image</a>
+                  <label>Answers:</label>
+                  <span>Add diffrent options for user to answer.</span>
+                  <span>Check correct answer.</span>
+                  <div class="option-question">
+                    <img src="img/ikon_check_green.png">
+                    <input type="text" value="Test test test test test test test test test"/>
+                    <img src="img/ikon_delete_q.png">
+                  </div>
+                  <div class="option-question">
+                    <img src="img/ikon_unchecked.png">
+                    <input type="text" value="Test test test test test test test test test"/>
+                    <img src="img/ikon_delete_q.png">
+                  </div>
+                  <div class="option-question">
+                      <img src="img/ikon_unchecked.png">
+                      <input type="text" value="Test test test test test test test test test"/>
+                      <img src="img/ikon_delete_q.png">
+                    </div>
+                    <div class="option-question">
+                        <img src="img/ikon_unchecked.png">
+                        <input type="text" value="Test test test test test test test test test"/>
+                        <img src="img/ikon_delete_q.png">
+                    </div>
+                    <a href="#"><img src="img/add-answer-icon.png"> Add Answer</a>
+                    <label>Elaboration:</label>
+                    <span>Add detailed description.</span>
+                    <br/>
+                    <br/>
+                    <input type="text" value="Test test test test test test test test test"/>
+                    <a href="#"><img src="img/ikon_add_image.png"> Add image</a>
+                    <a href="#" class="add-another"><img src="img/ikon_add_another_q.png"> Add Another Question</a>
+                </form>
+              </div>
+              <div class="other-questions">
+                <span>Questions</span>
+                <div>
+                  Fråga 1
+                </div>
+                <div>
+                    Fråga 1
+                </div>
+                <div>
+                    Fråga 1
                   </div>
               </div>
-              <div class="controls">
-                <a href="">Delete</a>
-                <a href="">Edit Draft</a>
-                <a href="">Publish</a>
-              </div>
+              
           </div>
+            <div class="controls">
+              <a href="#">Publish</a>
+              <a href="#">Save Draft</a>
+              <a href="#">Preview</a>
+            </div>
         </div>
 
         <a class="side-menu-btn" id="side-menu-btn"><img src="img/menu-icon.png"></a>

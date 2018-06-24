@@ -1,0 +1,33 @@
+
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+
+@include mq($from: mq768) {
+ 
+}
+
+// From 1024px
+@include mq($from: mq1024) {
+  .course{
+    .main-content{
+      width: 100%;
+      .course-content{
+        margin: 20px 10%;
+        >.video  {
+          float: left;
+          width: 65%;
+        }
+        >.other-quizes{
+          float: right;
+          width: 30%;
+        }
+      }
+      
+    }
+  }
+}
