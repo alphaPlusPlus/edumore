@@ -1849,3 +1849,117 @@ footer .footer-right .social-media img {
     width: 100%;
   }
 }
+
+/*results
+------------------------------------ */
+.results h1 {
+  padding: 20px 10px 20px 0px;
+}
+
+.results .side-menu {
+  display: none;
+}
+
+.results .table-container {
+  margin: 20px 10px;
+  overflow: auto;
+  width: 400px;
+}
+
+.results table {
+  width: 100%;
+  color: #666666;
+  border: none;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+}
+
+.results table tr {
+  height: 35px;
+  background: #ffffff;
+}
+
+.results table tr:first-child {
+  background: #fafafa;
+}
+
+.results table tr th {
+  text-align: right;
+  font-size: 17px;
+  padding: 0 30px;
+  white-space: nowrap;
+  color: #666666;
+  font-weight: 300;
+}
+
+.results table tr th:first-child {
+  padding-left: 25px;
+  text-align: left;
+}
+
+.results table tr th:last-child, .results table tr th.left {
+  text-align: left;
+}
+
+.results table tr th > img {
+  margin-left: 5px;
+}
+
+.results table tr td {
+  font-size: 14px;
+  text-align: right;
+  padding: 0 30px;
+  white-space: nowrap;
+  color: #666666;
+}
+
+.results table tr td:first-child {
+  padding-left: 25px;
+  text-align: left;
+}
+
+.results table tr td:last-child, .results table tr td.left {
+  text-align: left;
+}
+
+/*
+================================================================================
+
+  "Header" mobile styles
+
+================================================================================
+*/
+/*
+================================================================================
+
+  "Header" tablet styles
+
+================================================================================
+*/
+@media (min-width: 64em) {
+  .results .main-content {
+    width: 100%;
+  }
+}
+
+/*
+================================================================================
+
+  "Header" desktop styles
+
+================================================================================
+*/
+@media (min-width: 80em) {
+  .results .main-content {
+    width: 100%;
+  }
+  .results .main-content h1 {
+    margin: 20px 40px;
+  }
+  .results .main-content .table-container {
+    width: -webkit-calc(100% - 80px);
+    width: -moz-calc(100% - 80px);
+    width: calc(100% - 80px);
+    margin: 20px 40px;
+  }
+}
