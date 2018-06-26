@@ -1,4 +1,7 @@
 .create-question{
+    .side-menu{
+        display: none;
+    }
   .question-content{
     margin: 20px 10px 0 10px;
       >.question{
@@ -10,7 +13,7 @@
             line-height: 35px;
             text-decoration: none;
             color: #ffffff;
-            font-size: 1.5em;
+            font-size: 17px;
             background: #666666;
             display: block;
             padding: 0 20px;
@@ -18,6 +21,29 @@
             &:before{
                 content: '◀';
                 margin-right: 5px;
+            }
+        }
+
+        .top-links{
+            height: 35px;
+            line-height: 35px;
+            background: #666666;
+            display: block;
+            padding: 0 20px;
+            border-radius: 3px;
+            >a{
+                float: left;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 17px;
+                border-right: 1px solid #ffffff;
+                padding: 0 10px;
+                margin:  5px 0;
+                line-height: 25px;
+                height: 25px;
+                &:last-child{
+                    border-right: none;
+                }
             }
         }
         form{
@@ -34,8 +60,9 @@
                 display: block;
                 margin-bottom: 15px;
                 font-weight: 600;
+                margin-top:35px;
             }
-            input{
+            input[type='text'] , textarea, select{
                 border: none;
                 outline: none;
                 width: 100%;
@@ -43,6 +70,14 @@
                 color: #000000;
                 font-size: 14px;
             
+            }
+            .checkbox{
+                font-size: 16px;
+                color: #666666;
+                margin: 10px 0;
+                >input{
+                    margin-right: 10px;
+                }
             }
             a{
                 margin: 30px 0;
@@ -58,7 +93,6 @@
                     float: left;
                    
                 }
-
                 &.add-another{
                     font-size: 17px;
                     color: #000000;
@@ -135,4 +169,22 @@
           }
       }
   }
+   .buttons{
+       display: block;
+       text-align: right;
+       width: 100%;
+    .save-button{
+        color: #ffffff;
+        background: #ff0000;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        padding:  0 26px;
+        margin:25px 10px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+  
+    }
+ }
 }

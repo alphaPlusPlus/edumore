@@ -784,6 +784,7 @@ footer .footer-right .social-media img {
   margin: 0px 10px;
   margin-bottom: 20px;
   display: block;
+  color: #666666;
 }
 
 .main-content .box {
@@ -1186,6 +1187,9 @@ footer .footer-right .social-media img {
   .main-content {
     width: 60%;
   }
+  .main-content h1 {
+    font-size: 30px;
+  }
   .side-menu {
     position: relative;
     left: 0;
@@ -1319,16 +1323,48 @@ footer .footer-right .social-media img {
 
 /* my content
 ------------------------------------ */
+.my-content h1 {
+  margin: 20px 10px;
+  float: left;
+}
+
+.my-content .add-button {
+  float: right;
+  display: block;
+  text-decoration: none;
+  margin: 18px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 29px;
+  line-height: 29px;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.my-content .add-button img {
+  margin-right: 5px;
+}
+
+.my-content .side-menu {
+  display: none;
+}
+
 .my-content .item {
   margin: 20px 10px;
   clear: both;
   overflow: hidden;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
 }
 
 .my-content .item > .box {
   float: none;
   width: 100%;
   margin: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .my-content .item > .box > div {
@@ -1336,15 +1372,17 @@ footer .footer-right .social-media img {
 }
 
 .my-content .item > .controls {
-  float: right;
+  float: none;
+  text-align: right;
+  padding: 20px 0;
   margin-top: 20px;
 }
 
 .my-content .item > .controls > a {
   text-decoration: none;
-  color: #000000;
-  font-size: 1.5em;
-  margin: 0 20px;
+  color: #666666;
+  font-size: 14px;
+  margin: 0 10px;
 }
 
 /*
@@ -1373,6 +1411,8 @@ footer .footer-right .social-media img {
     width: 50%;
   }
   .my-content .main-content .item > .controls {
+    float: right;
+    padding: 0;
     margin-top: 100px;
   }
 }
@@ -1386,15 +1426,25 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 80em) {
   .my-content .main-content {
-    width: 80%;
+    width: 100%;
+  }
+  .my-content .main-content .add-button {
+    margin: 18px 10px;
+  }
+  .my-content .main-content h1 {
+    margin: 20px 40px;
   }
   .my-content .main-content .item {
-    margin: 20px 10%;
+    margin: 20px 40px;
   }
 }
 
 /*Course
 ------------------------------------ */
+.course .side-menu {
+  display: none;
+}
+
 .course .course-content {
   margin: 20px 10px;
 }
@@ -1494,9 +1544,11 @@ footer .footer-right .social-media img {
   .course .main-content {
     width: 100%;
   }
+  .course .main-content .main-header {
+    margin: 0px 40px;
+  }
   .course .main-content .course-content {
-    margin: 20px 10%;
-    margin: 20px 10%;
+    margin: 20px 40px;
     display: block;
     overflow: hidden;
     height: 100%;
@@ -1520,12 +1572,16 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 80em) {
   .course .main-content {
-    width: 80%;
+    width: 100%;
   }
 }
 
 /*create-question
 ------------------------------------ */
+.create-question .side-menu {
+  display: none;
+}
+
 .create-question .question-content {
   margin: 20px 10px 0 10px;
 }
@@ -1542,7 +1598,7 @@ footer .footer-right .social-media img {
   line-height: 35px;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 17px;
   background: #666666;
   display: block;
   padding: 0 20px;
@@ -1552,6 +1608,31 @@ footer .footer-right .social-media img {
 .create-question .question-content > .question > a:before {
   content: '◀';
   margin-right: 5px;
+}
+
+.create-question .question-content > .question .top-links {
+  height: 35px;
+  line-height: 35px;
+  background: #666666;
+  display: block;
+  padding: 0 20px;
+  border-radius: 3px;
+}
+
+.create-question .question-content > .question .top-links > a {
+  float: left;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  border-right: 1px solid #ffffff;
+  padding: 0 10px;
+  margin: 5px 0;
+  line-height: 25px;
+  height: 25px;
+}
+
+.create-question .question-content > .question .top-links > a:last-child {
+  border-right: none;
 }
 
 .create-question .question-content > .question form {
@@ -1571,15 +1652,26 @@ footer .footer-right .social-media img {
   display: block;
   margin-bottom: 15px;
   font-weight: 600;
+  margin-top: 35px;
 }
 
-.create-question .question-content > .question form input {
+.create-question .question-content > .question form input[type='text'], .create-question .question-content > .question form textarea, .create-question .question-content > .question form select {
   border: none;
   outline: none;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
   color: #000000;
   font-size: 14px;
+}
+
+.create-question .question-content > .question form .checkbox {
+  font-size: 16px;
+  color: #666666;
+  margin: 10px 0;
+}
+
+.create-question .question-content > .question form .checkbox > input {
+  margin-right: 10px;
 }
 
 .create-question .question-content > .question form a {
@@ -1681,6 +1773,25 @@ footer .footer-right .social-media img {
   border: none;
 }
 
+.create-question .buttons {
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+.create-question .buttons .save-button {
+  color: #ffffff;
+  background: #ff0000;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 0 26px;
+  margin: 25px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
 /*
 ================================================================================
 
@@ -1699,11 +1810,20 @@ footer .footer-right .social-media img {
   .create-question .main-content {
     width: 100%;
   }
+  .create-question .main-content .main-header {
+    margin: 0px 40px;
+  }
   .create-question .main-content .controls {
-    margin: 0 10%;
+    margin: 0 40px;
+  }
+  .create-question .main-content .buttons {
+    width: 65%;
+  }
+  .create-question .main-content .buttons .save-button {
+    margin: 25px 10px;
   }
   .create-question .main-content .question-content {
-    margin: 20px 10% 0 10%;
+    margin: 20px 40px 0 40px;
     display: block;
     overflow: hidden;
   }
@@ -1726,6 +1846,6 @@ footer .footer-right .social-media img {
 */
 @media (min-width: 80em) {
   .create-question .main-content {
-    width: 80%;
+    width: 100%;
   }
 }

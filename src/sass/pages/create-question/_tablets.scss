@@ -15,12 +15,22 @@
 @include mq($from: mq1024) {
   .create-question{
     .main-content{
+      .main-header{
+        margin: 0px 40px;
+      }
       width: 100%;
       .controls{
-        margin: 0 10%;
+        margin: 0 40px;
+      }
+
+      .buttons{
+        width: 65%;
+        .save-button{  
+          margin:25px 10px;
+        }
       }
       .question-content{
-        margin: 20px 10% 0 10%;
+        margin: 20px 40px 0 40px;
         display: block;
         overflow: hidden;
         >.question  {

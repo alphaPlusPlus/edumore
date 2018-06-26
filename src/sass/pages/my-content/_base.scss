@@ -1,24 +1,52 @@
 .my-content{
+    h1{
+        margin: 20px 10px;
+        float: left;
+    }
+    .add-button{
+        float: right;
+        display: block;
+        text-decoration: none;
+        margin: 18px 10px;
+        font-size: 13px;
+        font-weight: 500;
+        height: 29px;
+        line-height: 29px;
+        background: #ff0000;
+        color: #ffffff;
+        padding: 0 10px;
+        img{
+          margin-right:5px;
+        }
+      }
+   .side-menu{
+       display: none;
+   }
   .item{
     margin: 20px 10px;
     clear: both;
     overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
     >.box{
         float: none;
         width: 100%;
         margin: 0;
+        box-shadow: none;
         >div{
             border: none;
         }
     }
     >.controls{
-        float: right;
+        float: none;
+        text-align: right;
+        padding: 20px 0;
         margin-top: 20px;
         >a{
             text-decoration: none;
-            color: #000000;
-            font-size: 1.5em;
-            margin: 0 20px;
+            color: #666666;
+            font-size: 14px;
+            margin: 0 10px;
         }
     }
   }

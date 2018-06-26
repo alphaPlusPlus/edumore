@@ -76,12 +76,12 @@
   <!-- ==========================
     MAIN
   =========================== -->
-  <main class="my-content">
+  <main class="create-question">
       <div class="breadcrumb">
-          <a href="#">Home</a>
-          <a href="#">Sub page</a>
-          <a href="#">Sub Sub page</a>
-        </div>
+        <a href="#">Home</a>
+        <a href="#">Sub page</a>
+        <a href="#">Sub Sub page</a>
+      </div>
       <div class="row table-row">
         <div class="side-menu">
           <div class="inner">
@@ -133,37 +133,50 @@
           
         </div>
         <div class="main-content">
-          
-          <h1>My contents</h1>
-          <a href="#" class="add-button"><img src="img/add.png"><span>Create</span></a>
-          <div class="item">
-              <div class="box">
-                  <div>
-                    <h2><img src="img/quize-icon.png"> Högskoleprovet</h2>
-                    <b>Ordkunskap 2017 <span>| 200 frågor</span></b>
-                    Ordkunskap 20 är en del av serien för ordkunskap i högskoleprovet.
-                  </div>
-              </div>
-              <div class="controls">
-                <a href="">Delete</a>
-                <a href="">Edit Draft</a>
-                <a href="">Publish</a>
+          <span class="main-header">Create a Quiz</span>
+
+          <div class="question-content">
+              <div class="question">
+                <div class="top-links">
+                    <a href="#">Create a Quiz</a>
+                    <a href="#">Create Math Problem</a>
+                </div>
+                <form>
+                  <label>Title:</label>
+                  <input type="text" value="Test test test test test test test test test"/>
+                  <label>Description:</label>
+                  <textarea>Test test test test test test test test test Test test test test test test test test test</textarea>
+                  <label>Category:</label>
+                  <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                  </select>
+                  <label>Sub-Category:</label>
+                  <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                  </select>
+                  <label>Level:</label>
+                  <select>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                  </select>
+                  <label>Pass Mark:</label>
+                  <input type="text" value="......"/>
+                  <label>Max amount of questions:</label>
+                  <input type="text" value="......"/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <div class="checkbox"><input type="checkbox" /> Random Order</div>
+                  <div class="checkbox"><input type="checkbox" /> Answer at the end</div>
+                  <div class="checkbox"><input type="checkbox" /> Exam Paper</div>
+                  <div class="checkbox"><input type="checkbox" /> Single Attempt</div>
+                </form>
               </div>
           </div>
-
-          <div class="item">
-              <div class="box">
-                  <div>
-                    <h2><img src="img/quize-icon.png"> Högskoleprovet</h2>
-                    <b>Ordkunskap 2017 <span>| 200 frågor</span></b>
-                    Ordkunskap 20 är en del av serien för ordkunskap i högskoleprovet.
-                  </div>
-              </div>
-              <div class="controls">
-                <a href="">Delete</a>
-                <a href="">Edit Draft</a>
-                <a href="">Publish</a>
-              </div>
+          <div class="buttons">
+              <a href="#" class="save-button">Save and continue</a>
           </div>
         </div>
 

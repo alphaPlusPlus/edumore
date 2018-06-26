@@ -16,9 +16,11 @@
   .course{
     .main-content{
       width: 100%;
+      .main-header{
+        margin: 0px 40px;
+      }
       .course-content{
-        margin: 20px 10%;
-        margin: 20px 10%;
+        margin: 20px 40px;
         display: block;
         overflow: hidden;
         height: 100%;
