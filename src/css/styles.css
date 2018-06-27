@@ -1455,21 +1455,21 @@ footer .footer-right .social-media img {
   margin: 20px 10px;
 }
 
-.course .course-content > .video {
+.course .course-content > .content {
   background: #ffffff;
   width: 100%;
   -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.05);
 }
 
-.course .course-content > .video > .tabs {
+.course .course-content > .content > .tabs {
   background: #fafafa;
   clear: both;
   display: block;
   overflow: hidden;
 }
 
-.course .course-content > .video > .tabs > a {
+.course .course-content > .content > .tabs > a {
   text-decoration: none;
   padding: 0 20px;
   color: #666666;
@@ -1479,18 +1479,31 @@ footer .footer-right .social-media img {
   float: left;
 }
 
-.course .course-content > .video > .tabs > a.selected {
+.course .course-content > .content > .tabs > a.selected {
   background: #ffffff;
 }
 
-.course .course-content > .video > .content {
+.course .course-content > .content > .tabcontent {
   clear: both;
   display: block;
+}
+
+.course .course-content > .content > .tabcontent.video {
   margin: 10px;
   background: #e6e6e6;
   height: 380px;
   text-align: center;
   line-height: 380px;
+}
+
+.course .course-content > .content > .tabcontent.text {
+  margin: 25px 10px;
+  font-size: 15px;
+}
+
+.course .course-content > .content > .tabcontent.text > span {
+  font-size: 17px;
+  color: #5c9732;
 }
 
 .course .course-content > .other-quizes {
@@ -1559,7 +1572,7 @@ footer .footer-right .social-media img {
     overflow: hidden;
     height: 100%;
   }
-  .course .main-content .course-content > .video {
+  .course .main-content .course-content > .content {
     float: left;
     width: 65%;
   }

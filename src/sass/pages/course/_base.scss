@@ -4,7 +4,7 @@
   }  
   .course-content{
     margin: 20px 10px;
-      >.video{
+      >.content{
         background: #ffffff;
         width: 100%;
         box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.05);
@@ -27,16 +27,24 @@
                 }
             }
         }
-        >.content{
+        >.tabcontent{
             clear: both;
             display: block;
-            margin: 10px;
-            background: #e6e6e6;
-            height: 380px;
-            text-align: center;
-            line-height: 380px;
-            
-
+            &.video{
+                margin: 10px;
+                background: #e6e6e6;
+                height: 380px;
+                text-align: center;
+                line-height: 380px;
+            }
+            &.text{
+                margin: 25px 10px;
+                font-size: 15px;
+                >span{
+                    font-size: 17px;
+                    color: #5c9732;
+                }
+            }
         }
       }
       >.other-quizes{
