@@ -1863,7 +1863,7 @@ footer .footer-right .social-media img {
 .results .table-container {
   margin: 20px 10px;
   overflow: auto;
-  width: 400px;
+  width: 100%;
 }
 
 .results table {
