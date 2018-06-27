@@ -16,8 +16,14 @@
   .my-content{
     .main-content{
       width: 100%;
+      .add-button{
+        margin: 18px 40px;
+      }
+      h1{
+        margin: 20px 40px;
+      }
       .item{
-        margin: 20px 10%;
+        margin: 20px 40px;
         >.box{
           float: left;
           width: 50%;

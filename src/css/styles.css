@@ -1403,8 +1403,14 @@ footer .footer-right .social-media img {
   .my-content .main-content {
     width: 100%;
   }
+  .my-content .main-content .add-button {
+    margin: 18px 40px;
+  }
+  .my-content .main-content h1 {
+    margin: 20px 40px;
+  }
   .my-content .main-content .item {
-    margin: 20px 10%;
+    margin: 20px 40px;
   }
   .my-content .main-content .item > .box {
     float: left;
@@ -1429,7 +1435,7 @@ footer .footer-right .social-media img {
     width: 100%;
   }
   .my-content .main-content .add-button {
-    margin: 18px 10px;
+    margin: 18px 40px;
   }
   .my-content .main-content h1 {
     margin: 20px 40px;
