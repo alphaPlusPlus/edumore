@@ -647,6 +647,7 @@ footer {
   overflow: hidden;
   width: 100%;
   padding: 0 30px;
+  height: 55px;
 }
 
 footer .title {
@@ -658,7 +659,7 @@ footer .title {
 
 footer .text {
   font-size: 15px;
-  line-height: 30px;
+  line-height: 55px;
   color: #000;
   position: absolute;
   bottom: 0;
@@ -671,7 +672,7 @@ footer .footer-right ul {
 }
 
 footer .footer-right ul li a {
-  line-height: 30px;
+  line-height: 55px;
   font-size: 16px;
   text-decoration: none;
   color: #666666;
@@ -681,8 +682,8 @@ footer .footer-right .social-media {
   float: right;
   border-left: 1px solid #262626;
   padding-left: 16px;
-  height: 53px;
-  margin-top: 20px;
+  height: 55px;
+  margin-top: 0px;
 }
 
 footer .footer-right .social-media img {
@@ -1085,11 +1086,11 @@ footer .footer-right .social-media img {
     float: left;
   }
   footer .title {
-    line-height: 94px;
+    line-height: 55px;
   }
   footer .text {
     margin-left: 40px;
-    line-height: 94px;
+    line-height: 55px;
     position: relative;
   }
   footer .footer-right {
@@ -1105,7 +1106,7 @@ footer .footer-right .social-media img {
     float: left;
   }
   footer .footer-right ul li a {
-    line-height: 94px;
+    line-height: 55px;
   }
   .main-header {
     margin: 0px 10%;

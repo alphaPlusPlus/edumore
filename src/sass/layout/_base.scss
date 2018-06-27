@@ -207,6 +207,7 @@ footer{
   overflow: hidden;
   width: 100%;
   padding: 0 30px;
+  height: 55px;
   
   .title{
     color: #ff0000;
@@ -217,7 +218,7 @@ footer{
   }
   .text{
     font-size: 15px;
-    line-height:30px;
+    line-height:55px;
     color: #000;
     position: absolute;
     bottom: 0;
@@ -230,7 +231,7 @@ footer{
       list-style: none;
       li{
         a{
-          line-height:30px;
+          line-height:55px;
           font-size: 16px;
           text-decoration:none;
           color: $text-color;
@@ -241,8 +242,8 @@ footer{
       float: right;
       border-left: 1px solid #262626;
       padding-left: 16px;
-      height: 53px;
-      margin-top: 20px;
+      height: 55px;
+      margin-top: 0px;
       img{
         margin: 16px 4px 0 4px;
       }
