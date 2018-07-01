@@ -25,6 +25,8 @@ $( window ).resize(function() {
   $('.table-container').width($( window ).width() - 20);
 });
 
+$('.tabcontent').hide();
+$('.tabcontent').first().show();
 $('.tabs > a').click(function(){
   var value = $(this).attr('data-value');
   $('.tabs > a').removeClass("selected");
