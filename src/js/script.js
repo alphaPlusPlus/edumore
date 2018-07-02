@@ -23,7 +23,10 @@ $('.table-container').width($( window ).width() - 20);
 
 $( window ).resize(function() {
   $('.table-container').width($( window ).width() - 20);
+  $('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height() -5) +'px');
 });
+
+$('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height()-5) +'px');
 
 $('.tabcontent').hide();
 $('.tabcontent').first().show();

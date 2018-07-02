@@ -27,10 +27,44 @@
         >.content  {
           float: left;
           width: 65%;
+          height: auto;
+          >.tabcontent{
+            &.quiz{
+              .progress-container{
+                      >.progress{
+                          width: calc(100% - 80px);
+                      }
+                      >span{
+                          width: 80px;
+                      }
+                  }
+                  span{
+                      margin-right: 80px;
+                  }
+                  .answers{
+                      list-style: none;
+                      margin: 40px 80px 40px 0;
+                      padding: 0;
+                      
+                  }
+                 
+                  .images{
+                      
+                      margin-right: 80px;
+                     
+                  }
+                  .save-button{
+                    margin-right: 20px;
+                  }
+                  
+
+              }
+          }
         }
         >.other-quizes{
           float: right;
           width: 30%;
+          height: auto;
         }
       }
       
