@@ -19,10 +19,14 @@ $('.side-menu-btn').click(function() {
   $sidemenu.toggle(100);
 });
 
-$('.table-container').width($( window ).width() - 20);
+if($( window ).width()  < 850){
+  $('.table-container').width($( window ).width() - 20);
+}
 
 $( window ).resize(function() {
-  $('.table-container').width($( window ).width() - 20);
+  if($( window ).width()  < 850){
+    $('.table-container').width($( window ).width() - 20);
+  }
   $('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height() -5) +'px');
 });
 

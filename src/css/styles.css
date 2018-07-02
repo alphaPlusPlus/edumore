@@ -2100,6 +2100,9 @@ footer .footer-right .social-media img {
   .results .main-content {
     width: 100%;
   }
+  .results .main-content h1 {
+    margin: 20px 40px;
+  }
 }
 
 /*
