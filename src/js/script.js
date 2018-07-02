@@ -27,10 +27,10 @@ $( window ).resize(function() {
   if($( window ).width()  < 850){
     $('.table-container').width($( window ).width() - 20);
   }
-  $('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height() -5) +'px');
+  $('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height() -6) +'px');
 });
 
-$('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height()-5) +'px');
+$('main').css('min-height', ($( window  ).height() - $( 'header'  ).height() - $( 'footer'  ).height()-6) +'px');
 
 $('.tabcontent').hide();
 $('.tabcontent').first().show();
