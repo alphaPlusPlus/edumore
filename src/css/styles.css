@@ -1887,15 +1887,40 @@ footer .footer-right .social-media img {
   display: block;
 }
 
-.create-question .question-content > .question form .option-question img {
+.create-question .question-content > .question form .option-question .checkbox {
   position: absolute;
+  margin-top: 5px;
 }
 
-.create-question .question-content > .question form .option-question input {
+.create-question .question-content > .question form .option-question .checkbox input[type=checkbox] {
+  display: none;
+}
+
+.create-question .question-content > .question form .option-question .checkbox label {
+  margin: 0;
+  padding: 0;
+}
+
+.create-question .question-content > .question form .option-question .checkbox input[type=checkbox] + label {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background: url("/img/ikon_unchecked.png");
+  height: 20px;
+  width: 20px;
+}
+
+.create-question .question-content > .question form .option-question .checkbox input[type=checkbox]:checked + label {
+  background: url("/img/ikon_check_green.png");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.create-question .question-content > .question form .option-question input[type="text"] {
   margin-left: 25px;
-  width: -webkit-calc(100% - 35px);
-  width: -moz-calc(100% - 35px);
-  width: calc(100% - 35px);
+  width: -webkit-calc(100% - 50px);
+  width: -moz-calc(100% - 50px);
+  width: calc(100% - 50px);
 }
 
 .create-question .question-content > .other-questions {

@@ -1,7 +1,7 @@
 {
   "name": "",
   "devDependencies": {
-    "browser-sync": "*",
+    "browser-sync": "^2.26.3",
     "del": "*",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "*",
