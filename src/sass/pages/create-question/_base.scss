@@ -123,13 +123,13 @@
                     input[type=checkbox] + label {
                         display:inline-block;
                         padding: 0 0 0 0px;
-                        background: url('/img/ikon_unchecked.png');
+                        background: url('../img/ikon_unchecked.png');
                         height: 20px;
                         width: 20px;
                     }
                     
                     input[type=checkbox]:checked + label {
-                        background: url('/img/ikon_check_green.png');
+                        background: url('../img/ikon_check_green.png');
                         height: 20px;
                         width: 20px;
                         display:inline-block;
